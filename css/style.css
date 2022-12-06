@@ -1,0 +1,232 @@
+:root {
+    --Blanco: #FFF;
+    --Negro: #000;
+    --fuenteprincipal: "Century Gothic";
+}
+
+/*GLOBALES*/
+html {
+    font-size: 62.5%; /*1rem = 10px*/
+    box-sizing: border-box; /*hack para box model*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h4 {
+    margin: 0 !important;
+}
+
+/*hack para box model*/
+body {
+    font-size: 16px; /*1rem = 10px*/
+}
+
+/*HEADER*/
+.header {
+    background-color: var(--Negro);
+    padding-top: 1rem;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*{LOGOTIPO}*/
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo__img {
+    max-width: 15rem;
+}
+
+
+/*{NAVEGACION}*/
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion {
+    padding: 2rem 0;
+    text-align: center;
+    gap: 3rem;
+    color: var(--Blanco);
+    font-family: var(--fuenteprincipal);
+    font-size: 1.5rem;
+}
+
+/*{MediaQueries Header}*/
+@media (min-width: 768px) {
+    .header {
+        background-color: var(--Negro);
+        padding: 1rem 0;
+    }
+    .d-flex {
+        width: 100%;
+        padding: 0 5rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 1200px){
+    .d-flex{
+        max-width: 140rem;
+        margin: 0 auto;
+    }
+}
+
+/*MAIN*/
+.main {
+    margin: 8rem 2.5rem 0 2.5rem;
+    padding-bottom: 3rem;
+}
+
+/*Descripcion*/
+.descripcion h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fuenteprincipal);
+}
+
+.descripcion h3 {
+    text-align: justify;
+    font-family: var(--fuenteprincipal);
+    font-weight: normal;
+    color: #757575;
+}
+/*MQ Main descripcion*/
+@media (min-width: 1200px){
+    .descripcion h1{
+        font-size: 4rem;
+    }
+
+    .descripcion{
+        width: 115rem;
+        margin: 0 auto;
+    }
+}
+
+/*Formulario*/
+
+.campos {
+    display: flex;
+    flex-direction: column;
+}
+
+.campos label {
+    font-family: var(--fuenteprincipal);
+    margin-bottom: 1.5rem;
+}
+
+.input-text {
+    margin-bottom: 1rem;
+}
+
+.input-button {
+    background-color: #4fb9a2;
+    color: var(--Blanco);
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-align: center;
+    border: none;
+}
+
+.input-button:hover {
+    cursor: pointer;
+}
+
+.input-textarea {
+    height: 7rem;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-text, .input-textarea {
+    border-color: rgba(229, 229, 229);
+    padding: 1rem .5rem;
+    font-family: var(--fuenteprincipal);
+    font-size: 1.3rem;
+    color: #5d5d5d;
+    border-radius: .5rem;
+}
+/*MQ Form*/
+@media (min-width: 1200px){
+    .contenedor__campos{
+        width: 115rem;
+        margin: 0 auto;
+    }
+}
+
+/*Tareas*/
+.tareas__bg {
+    padding: 1.4rem;
+    background-color: #e7eaef;
+    margin-bottom: 2rem;
+}
+
+.text h4 {
+    font-weight: normal;
+    font-family: var(--fuente-principal);
+}
+.flex-tareas{
+    display: flex;
+    gap: 1rem;
+
+}
+/*MQ tareas*/
+@media (min-width: 1200px){
+    .tareas__bg{
+        width: 115rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+}
+.dflex-article{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fuenteprincipal);
+    margin-bottom: 1rem;
+}
+.dflex-article p{
+    color: #5d5d5d;
+}
+.botones{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.article__input--editar, .article__input--eliminar{
+    background-color: #4fb9a2;
+    color: var(--Blanco);
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    border: none;
+}
+.article__input--eliminar{
+    background-color: #FFFFFF;
+    border: 0 solid;
+    border-width: .1rem;
+    border-color: #d3d3d3;
+    color: #000000;
+}
+@media (min-width: 1200px){
+    .dflex-article{
+        width: 115rem;
+        margin: 0 auto;
+    }
+}

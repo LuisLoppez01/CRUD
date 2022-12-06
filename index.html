@@ -5,9 +5,94 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>CRUD</title>
 </head>
 <body>
-
+<header>
+    <div class="header"> <!--inicio header-->
+        <div class="d-flex">
+            <div class="logo">
+                <div class="logo__img">
+                    <a href="index.html">
+                        <img class="logo__img" src="img/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="nav">
+                <span class="navegacion">Aplicación CRUD</span>
+            </div>
+        </div>
+    </div>
+</header><!--fin header-->
+<main>
+    <div class="main">
+        <div class="descripcion">
+            <h1>Listado de Tareas</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore eaque enim est et maiores
+                minima quidem quisquam. Aliquam aut blanditiis dicta ducimus, exercitationem id maiores molestiae quasi
+                quibusdam tenetur.</h3>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolore eaque enim est et maiores
+                minima quidem quisquam. Aliquam aut blanditiis dicta ducimus, exercitationem id maiores molestiae quasi
+                quibusdam tenetur.</h3>
+        </div>
+        <form id="formulario" class="formulario">
+            <div class="contenedor__campos">
+                <div class="campos">
+                    <label>Tarea</label>
+                    <input class="input-text" id="tarea" type="text" required>
+                </div>
+                <div class="campos">
+                    <label>Descripción</label>
+                    <textarea class="input-textarea" id="descripcion" required></textarea>
+                </div>
+                <div class="campos">
+                    <input type="submit" id="boton" class="input-button" value="Agregar tarea">
+                </div>
+            </div>
+        </form>
+        <div class="tareas__bg">
+            <div class="flex-tareas">
+                <div class="icon">
+                    <img class="" src="img/alert.png" alt="" width="20">
+                </div>
+                <div class="text">
+                    <h4>Aún no has creado tareas</h4>
+                </div>
+            </div>
+        </div>
+        <article class="dflex-article">
+            <div class="TyD">
+                <h4>Tarea</h4>
+                <p>Descrición</p>
+            </div>
+            <div class="botones">
+                <input type="button" class="article__input--eliminar" value="Eliminar">
+                <input type="button" class="article__input--editar" value="Editar">
+            </div>
+        </article>
+        <article class="dflex-article">
+            <div class="TyD">
+                <h4>Tarea</h4>
+                <p>Descrición</p>
+            </div>
+            <div class="botones">
+                <input type="button" class="article__input--eliminar" value="Eliminar">
+                <input type="button" class="article__input--editar" value="Editar">
+            </div>
+        </article>
+        <article id="listaTareas" class="dflex-article">
+            <div class="TyD">
+                <h4>Tarea</h4>
+                <p>Descrición</p>
+            </div>
+            <div class="botones">
+                <input type="button" class="article__input--eliminar" value="Eliminar">
+                <input type="button" class="article__input--editar" value="Editar">
+            </div>
+        </article>
+    </div> <!--End div.main-->
+</main>
 </body>
 </html>
