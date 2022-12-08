@@ -5,7 +5,7 @@ const listaTareas = document.getElementById('listaTareas')
 //const btnAgregar = document.getElementById('boton')
 const btnModificar = document.getElementById('btnmodificar')
 
-
+localStorage.setItem("tareas", [])
 let arrayTareas = []
 let item = {
     tarea: "",
