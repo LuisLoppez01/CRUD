@@ -37,7 +37,7 @@
                 minima quidem quisquam. Aliquam aut blanditiis dicta ducimus, exercitationem id maiores molestiae quasi
                 quibusdam tenetur.</h3>
         </div>
-        <form id="formulario" class="formulario">
+        <form id="formulario" class="formulario" autocomplete="off">
             <div class="contenedor__campos">
                 <div class="campos">
                     <label>Tarea</label>
@@ -47,12 +47,13 @@
                     <label>Descripción</label>
                     <textarea class="input-textarea" id="descripcion" required></textarea>
                 </div>
-                <div class="campos">
-                    <input type="submit" id="boton" class="input-button" value="Agregar tarea">
+                <div class="campos" id="campos">
+                    <input type="submit" id="boton" class="input-button btn__agregar" value="Agregar tarea">
+                    <input type="button" id="btnmodificar" class="input-button btn__modificar" value="Modificar">
                 </div>
             </div>
         </form>
-        <div class="tareas__bg">
+        <div class="tareas__bg" id="tareasMensaje">
             <div class="flex-tareas">
                 <div class="icon">
                     <img class="" src="img/alert.png" alt="" width="20">
@@ -62,37 +63,10 @@
                 </div>
             </div>
         </div>
-        <article class="dflex-article">
-            <div class="TyD">
-                <h4>Tarea</h4>
-                <p>Descrición</p>
-            </div>
-            <div class="botones">
-                <input type="button" class="article__input--eliminar" value="Eliminar">
-                <input type="button" class="article__input--editar" value="Editar">
-            </div>
-        </article>
-        <article class="dflex-article">
-            <div class="TyD">
-                <h4>Tarea</h4>
-                <p>Descrición</p>
-            </div>
-            <div class="botones">
-                <input type="button" class="article__input--eliminar" value="Eliminar">
-                <input type="button" class="article__input--editar" value="Editar">
-            </div>
-        </article>
-        <article id="listaTareas" class="dflex-article">
-            <div class="TyD">
-                <h4>Tarea</h4>
-                <p>Descrición</p>
-            </div>
-            <div class="botones">
-                <input type="button" class="article__input--eliminar" value="Eliminar">
-                <input type="button" class="article__input--editar" value="Editar">
-            </div>
-        </article>
+        <div id="listaTareas" class="">
+        </div>
     </div> <!--End div.main-->
+    <script src="js/script.js"></script>
 </main>
 </body>
 </html>

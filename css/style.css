@@ -140,6 +140,16 @@ body {
     font-size: 1.75rem;
     text-align: center;
     border: none;
+    display: block;
+}
+.input-button--eliminar{
+    display: none;
+}
+.btn__modificar{
+    display: none;
+}
+.botonmodificar{
+    display: block;
 }
 
 .input-button:hover {
@@ -174,6 +184,10 @@ body {
     padding: 1.4rem;
     background-color: #e7eaef;
     margin-bottom: 2rem;
+    display: block;
+}
+.tareas__bg--activado{
+    display: none;
 }
 
 .text h4 {
